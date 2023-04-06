@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+	<header>
+		<span id="logo">&amp;</span>
+		<span>Ampersand Associations</span>
+	</header>
+	<main>
+		<form action="https://reqbin.com/sample/post/json" method="POST" target="_blank">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<div class="element">
+				<label class="element" for="name">Enter your Name : &nbsp;</label>
+				<input type="text" id="name" placeholder="Name ?">
+			</div>
+			<div class="element">
+				<label class="element" for="num">Enter your age : &nbsp;</label>
+				<input type="number" id="num" min=18 max=36 placeholder="18-36">
+			</div>
+			<div class="element">
+				<label class="element" for="address">Address : &nbsp;</label>
+				<textarea id="address" placeholder="Address"></textarea>
+			</div>
+			<div class="element">
+				<label class="element" >Gender : &nbsp;</label>
+				<label for="gender">Male&nbsp;</label><input type="radio" value="male" name="gender" id="gender">
+				<label for="gender">Female&nbsp;</label><input type="radio" value="female" name="gender" id="gender">
+				<label for="gender">Other&nbsp;</label><input type="radio" value="other" name="gender" id="gender">
+				<label for="gender">Pefer Not to Say&nbsp;</label><input type="radio" checked value="loser" name="gender" id="gender">
+
+			</div>
+		</fieldset>
+			
+		<fieldset>
+			<legend>WHich course(s) do you Like</legend>
+			<div class="element">
+				<label for="course1">A</label><input type="checkbox" name="course" id="course1" >
+			</div>
+			<div class="element">
+				<label for="course2">B</label><input type="checkbox" name="course" id="course2" >
+			</div>
+			<div class="element">
+				<label for="course3">C</label><input type="checkbox" name="course" id="course3" >
+			</div>
+			<div class="element">
+				<label for="course4">D</label><input type="checkbox" name="course" id="course4" >
+			</div>
+		</fieldset>
+		<fieldset id="f3">
+			<legend>Thanks for filling it out</legend>
+			<input type="submit" class="buttons">
+			<input type="reset" value="don't click me" class="buttons">
+		</fieldset>
+	</main>
+	</body>
+</html>
