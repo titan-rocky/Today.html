@@ -5,7 +5,7 @@ var express=require("express");
 
 var app=express();
 app.use(express.static('static'));
-app.use('/css',express.static('static'));
+app.use('/css',express.static('static/styles.css'));
 app.use('/tsx',express.static('static'));
 app.use(express.json())
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
