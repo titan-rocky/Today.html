@@ -1,4 +1,4 @@
-# THis is a Static Web page
+# This is a Static Web page
 This web page is created to be submitted for the **ADP** core project assigned by the College
 
 ## Languages
