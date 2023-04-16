@@ -1,58 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <span id="logo">&amp;</span>
-      <span><mark>Amp</mark>ersand Associations</span>
-    </header>
-    <main>
-      <form action="https://GhostwhiteWarlikeSite.umedyostertho.repl.co/foo" method="POST" target="_blank">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <div class="element">
-          <label class="element" for="name">Enter your Name : &nbsp;</label>
-          <input type="text" id="name" placeholder="Name ?">
-        </div>
-        <div class="element">
-          <label class="element" for="num">Enter your age : &nbsp;</label>
-          <input type="number" id="num" min=18 max=36 placeholder="18-36">
-        </div>
-        <div class="element">
-          <label class="element" for="address">Address : &nbsp;</label>
-          <textarea id="address" cols="40" rows="5" placeholder="Address"></textarea>
-        </div>
-        <div class="element">
-          <label class="element" >Gender : &nbsp;</label>
-          <input type="radio" value="male" name="gender" id="gender"><label for="gender">Male&nbsp;</label>
-          <input type="radio" value="female" name="gender" id="gender"><label for="gender">Female&nbsp;</label>
-          <input type="radio" value="other" name="gender" id="gender"><label for="gender">Other&nbsp;</label>
-          <input type="radio" checked value="loser" name="gender" id="gender"><label for="gender">Pefer Not to Say&nbsp;</label>        
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>WHich course(s) do you Like</legend>
-        <div class="element">
-          <label for="course1">A</label><input type="checkbox" value="A" name="course" id="course1" >
-        </div>
-        <div class="element">
-          <label for="course2">B</label><input type="checkbox"  value="B" name="course" id="course2" >
-        </div>
-        <div class="element">
-          <label for="course3">C</label><input type="checkbox"  value="C" name="course" id="course3" >
-        </div>
-        <div class="element">
-          <label for="course4">D</label><input type="checkbox"  value="D" name="course" id="course4" >
-        </div>
-      </fieldset>
-      <fieldset id="f3">
-        <legend>Thanks for filling it out</legend>
-        <input type="submit" class="buttons">
-        <input type="reset" value="don't click me" class="buttons">
-      </fieldset>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Application Form</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/globals.css">
+    <head>
+    <body>
+        <header>
+            <div id="logo">
+                <span id="logo-amp">&amp;</span>
+            </div>
+            <h1><mark>Amp</mark>erstand&trade; Associations</h1>
+        </header>
+        <main>
+            <form action="success.html" method="post">
+                <fieldset class="form-set" id="persona">
+                    <legend>Personal Information</legend>
+                    <div class="form-label-container">
+                        <label class="form-label" for="Name">Enter your name: </label>
+                        <input class="form-inp" type="text" placeholder="Name" name="Name" id="Name" required/>
+                    </div>
+                    <div class="form-label-container">
+                        <label class="form-label" for="Age">Age: </label>
+                        <input class="form-inp" type="number" min=18 max=108 placeholder="18+" name="Age" id="Age" required/>
+                    </div>
+                    <div class="form-label-container">
+                        <label class="form-label" for="DOB">Date of Birth: </label>
+                        <input class="form-inp" type="date" placeholder="Name" name="Name" id="DOB" required/>
+                    </div>
+                    <div class="form-label-container">
+                        <label class="form-label" for="email">Email address: </label>
+                        <input class="form-inp" type="email" placeholder="Name" name="Email" id="email" required/>
+                    </div>
+                    <div class="form-label-container">
+                        <label class="form-label" for="pass">Password: </label>
+                        <input class="form-inp" type="password" placeholder="Name" name="Password" id="pass" required/>
+                    </div>
+                    <div class="form-label-container">
+                        <span class="form-label">Gender: </span>
+
+                        <section id="form-radio-container">
+                            <input class="rad-inp" type="radio" name="gender" id="gender-m" value="male" />
+                            <label for="gender-m">Male</label>
+                            <input class="rad-inp" type="radio" name="gender" id="gender-f" value="female" />
+                            <label for="gender-f">Female</label>
+                            <input class="rad-inp" type="radio" name="gender" id="gender-o" value="other" />
+                            <label for="gender-o">Other</label>
+                            <input class="rad-inp" type="radio" name="gender" id="gender-p" checked value="male" required />
+                            <label for="gender-p">Prefer not to say</label>
+                        </section>
+                    </div>
+                    <div class="form-label-container">
+                        <label class="form-label" for="Address">Address: </label>
+                        <textarea id="Address" rows=5 cols=55 placeholder="Enter "></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="form-set" id="skill-set">
+                    <legend>Skills</legend>
+                    <div class="check-element">
+                        <input type="checkbox" id="c1" name="skill" />
+                        <label class="check-label" for="c1">Artificial Intelligence</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c2" name="skill" />
+                        <label class="check-label" for="c2">Machine Learning</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c3" name="skill" />
+                        <label class="check-label" for="c3">Data Science</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c4" name="skill" />
+                        <label class="check-label" for="c4">Devops</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c5" name="skill" />
+                        <label class="check-label" for="c5">Cyber Security</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c6" name="skill" />
+                        <label class="check-label" for="c6">Networking</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c7" name="skill" />
+                        <label class="check-label" for="c7">Problem Solving</label>
+                    </div>
+                    <div class="check-element">
+                        <input type="checkbox" id="c8" name="skill" />
+                        <label class="check-label" for="c8">Cloud Architecture</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-set">
+
+                </fieldset>
+                <fieldset class="form-set">
+                    <legend>Please verify the details before submitting</legend>
+                    <div class="sub-check">
+                        <input type="checkbox" name="toc" required id="toc">
+                        <label class="sub-label" for="toc">I agree to <b><a href="">Terms and Conditions</a></b></label>
+                    </div>
+                    <div class="sub-check">
+                        <input type="checkbox" name="subs" id="subs">
+                        <label class="sub-label" for="subs">Subscribe to our Newsletters</label>
+                    </div>
+                </fieldset>
+                <div class="butt-container">
+                    <input type="submit" name="submit" id="butt-submit" class="butt" value="Submit" />
+                    <input type="reset" name="reset" id="butt-reset" class="butt" value="Reset" />
+                </div>
+            </form>
+        </main>
+    </body>
 </html>

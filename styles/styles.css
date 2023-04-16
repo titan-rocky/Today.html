@@ -1,0 +1,158 @@
+main
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:50px;
+    font-family:Fira Code;
+
+}
+
+form
+{
+    background-color:var(--blue);
+    padding:5px 20px 20px 20px;
+    opacity:72%;
+    border:10px solid var(--blue);
+    border-radius:25px;
+    width:70%;
+    color:var(--fg);
+
+}
+
+.form-set
+{
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:10px;
+    border:2px ridge var(--fg);
+
+}
+
+.form-label-container
+{
+    margin-bottom: 10px;;
+}
+
+.form-label{
+	display:flex;
+	padding:10px;
+	align-content:center;
+}
+
+input{
+        font-family:Fira Code;
+
+}
+
+input[type="text"],[type="email"],[type="password"],[type="date"],textarea
+{
+    background-color:var(--gray);
+    color:#fff;
+    border:5px solid var(--gray);
+    border-radius:30px;
+    font-size:16px;
+    padding:3px 8px 3px 8px;
+    width:98%;
+    margin:10px;
+    margin-right:0px;
+}
+
+input[type="text"]::placeholder,[type="email"]::placeholder,[type="password"]::placeholder,[type="date"]::placeholder,input[type="number"]::placeholder
+{
+    color:var(--lgray);
+}
+
+textarea
+{
+    resize:none;
+    border-radius:6px;
+}
+
+
+input[type="number"]
+{
+    background-color:var(--gray);
+    color:var(--fg);
+    margin:10px;
+    color:#fff;
+    font-size:16px;
+    padding:3px 8px 3px 8px;
+    border:5px solid var(--gray);
+    border-radius:30px;
+
+}
+
+input[type="radio"]
+{
+    background-color:var(--gray);
+    border:15px solid var(--gray);
+    color:var(--fg);
+}
+
+input[type="submit"]{
+	border:5px solid #ced2c2;
+	border-radius:10px;
+	background-color:#ced2c2;
+	padding:5px 10px 5px 10px;
+        font-size:20px;
+        font-family:monospace;
+	margin:5px 10px 10px 10px;
+	color:var(--blue);
+	
+}
+input[type="reset"]
+{
+	border:5px solid #f1c5ae;
+	border-radius:10px;
+	background-color:#f1c5ae;
+	padding:5px 10px 5px 10px;
+        font-size:20px;
+	font-family:monospace;
+	margin:5px 10px 10px 10px;
+	color:var(--blue);
+}
+
+section{
+    padding:10px;
+}
+
+#persona
+{
+    display:flex;
+    flex-direction:column;
+}
+
+#skill-set
+{
+    display:grid;
+    grid-template-columns:repeat(4,25%);
+    padding:30px;
+}
+
+input[type="checkbox"]
+{
+    margin:10px;
+}
+
+.check-element
+{
+    display:flex;
+    align-items:center;
+    font-size: 15px;
+    margin:3px;
+
+}
+
+legend
+{
+    text-align:center;
+    padding:10px;
+    font-size:1.2em;
+}
+
+.butt-container
+{
+    display:flex;
+    justify-content:center;
+}
